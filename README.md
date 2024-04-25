@@ -36,8 +36,8 @@ The absence of triggers for order total calculation, stock availability checks, 
 
 AUto-Genrated ERM		                                                              |	Adjusted ERM
 :--------------------------------------------------------------------------------:    |:--------------------------------
-![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Generated_Schema_relationship_desig)		                                           |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Modified_Schema_relationship_design.png)
-The Auto_generated schema shows one to many relationship  but it was adjusted to one to one relationship as required
+![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Generated_Schema_relationship_design.png)		                                                                            |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Modified_Schema_relationship_design.png)
+The Auto_generated schema shows one to many relationship.                             | Schema was adjusted to one to one relationship as required
 
 
 ## Schema Design
