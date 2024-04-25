@@ -17,36 +17,44 @@ Updating customer information and calculating sales metrics (total revenue, top-
 commission) manually is an inefficient and error-prone process.
 4. Inaccurate Data and Communication:
 The absence of triggers for order total calculation, stock availability checks, and data audit trails can lead to inaccurate data and lack of communication regarding order updates.
-Skills/Concept Demostrated
-Entity-Relationship Modeling (ERM)
-Schema Design
-Data Integrity and Accuracy
-customer interaction optimization
- SQL queries
-inventory management
-Query Optimization
-Automation
-customer interaction optimization
+
+## Skills/Concept Demostrated
+ * Entity-Relationship Modeling (ERM)
+ * Schema Design
+ * Data Integrity and Accuracy
+ * customer interaction optimization
+ * SQL queries
+ * inventory management
+ * Query Optimization
+ * Automation
+ * customer interaction optimization
 
 
-Modeling
-Entity-Relationship Modeling (ERM) was conducted to delineate the relationships between various data entities within the CRM system. The automatically generated ERM was modified to align with business requirements. Each OrderDetail is associated with a specific product (One-to-One Relationship), while other tables exhibit One-to-Many relationships.
+## Modeling
+     Entity-Relationship Modeling (ERM) was conducted to delineate the relationships between various data entities within the CRM system. The automatically generated ERM was modified to align with business requirements. Each OrderDetail is associated with a specific product (One-to-One Relationship), while other tables exhibit One-to-Many relationships.
 
 
-Adjusted ERM		|	Automated ERM
-:-----------------------------: |:--------------------------------
-![](Put picture)		 |	![](Put picture)
+AUto-Genrated ERM		                                                              |	Adjusted ERM
+:--------------------------------------------------------------------------------:    |:--------------------------------
+![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Generated_Schema_relationship_desig)		                                           |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Modified_Schema_relationship_design.png)
+The Auto_generated schema shows one to many relationship  but it was adjusted to one to one relationship as required
 
-Schema Design
+
+## Schema Design
 The CRM system utilizes a relational database with various tables designed using SQL. Each table stores specific data relevant to the system, with appropriate data types for efficient management.
 To ensure data accuracy, several constraints are implemented:
-•	Primary Keys: Each table has a unique identifier column (e.g., CustomerID) that prevents duplicates and acts as the main reference point.
-•	Foreign Keys: These enforce connections between related tables. For example, an order references a specific customer ensured by the CustomerID linking the SalesOrders and Customers tables.
-•	Check Constraints: These validate specific data values. For instance, product prices must be positive.
-•	Unique Constraints: These guarantee uniqueness for certain columns or combinations. For example, customer email addresses must be unique.
+* Primary Keys: Each table has a unique identifier column (e.g., CustomerID) that prevents duplicates and acts as the main reference point.
+* Foreign Keys: These enforce connections between related tables. For example, an order references a specific customer ensured by the CustomerID linking the SalesOrders and Customers tables.
+* Check Constraints: These validate specific data values. For instance, product prices must be positive.
+* Unique Constraints: These guarantee uniqueness for certain columns or combinations. For example, customer email addresses must be unique.
+
+![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Customer_Table.png)
 By implementing these constraints, the schema design safeguards data integrity within the CRM system.
+
 ## Data Population
 To populate the tables within the CRM system, Structured Query Language (SQL) was employed. Specifically, INSERT statements were utilized to strategically insert data into each table. This initial data was manually entered for testing purposes. (images)
+
+
 Problem Solving
 
 
