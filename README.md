@@ -1,6 +1,6 @@
 # DataKirk_Retail_Store_Database_System
 ## Introduction 
-![][github intro page.jpg]
+![](github intro page.jpg)
 
 This is a project on Database, on creating a Customer Relationship Management System (CRM) called Datakirk Retail Store CRM. This project is to design a Database system that will perform Datakirk operations, optimise customer interaction and ensuring accuracy.
 
