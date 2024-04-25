@@ -1,8 +1,10 @@
 # DataKirk_Retail_Store_Database_System
 ## Introduction 
-![]()
+![][https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/github%20intro%20page.jpg]
+
 This is a project on Database, on creating a Customer Relationship Management System (CRM) called Datakirk Retail Store CRM. This project is to design a Database system that will perform Datakirk operations, optimise customer interaction and ensuring accuracy.
-    *Disclaimer: This project was completed during a work experience program and is intended for demonstration purposes only.*
+
+ *Disclaimer: This project was completed during a work experience program and is intended for demonstration purposes only.*
 
 ## Problem Statement.
 This project address several key challenges in  DataKirk Retail Store CRM and can be categorized as follows:
@@ -80,3 +82,6 @@ Advanced Security Measures: Implement robust security measures to protect sensit
 
 Problem-Solving:
 
+
+
+[def]: https://raw.githubusercontent.com/Jejefunmi/DataKirk_Retail_Store_Database_System/main/github%20intro%20page.webp
