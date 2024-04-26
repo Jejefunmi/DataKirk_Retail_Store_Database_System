@@ -78,6 +78,8 @@ Retriving Top 5 best selling products can be used to make decisions about Invent
 
 #### 3 Inaccurate Data and Communication: to solve this, Triggers were created to perform Automated responses to corresponding event carried out
 * ##### Order Total Calculation Trigger
+The purpose of the trigger is to automatically update the TotalAmount  in the SalesOrders table whenever there are changes (inserts, updates, or deletes) to the OrderDetails table Ensures the total order amount in the SalesOrders table is always accurate, reflecting changes in order details.
+
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger.png)
 
 Testing the Trigger 
@@ -86,37 +88,46 @@ Testing for Insert                                                              
 :--------------------------------------------------------------------------------:    |:--------------------------------
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_query.png) |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_inserted_Query.png)
 
+As values (21,2,50) were inserted in Orderdetails table the TotalAmount in SalesOrder table where the OrderDetails is 21 automatically became 500 (2 * 250)
+
 
  Testing for update                                                                   |	Output
 :--------------------------------------------------------------------------------:    |:--------------------------------
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_update_query.png) |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_update_query_result.png)
 
- The purpose of the trigger is to automatically update the TotalAmount  in the SalesOrders table whenever there are changes (inserts, updates, or deletes) to the OrderDetails table Ensures the total order amount in the SalesOrders table is always accurate, reflecting changes in order details.
+Likewise, testing for update, TotalAmount became 1197 when quantity 5 was set where Orderdetails is 1 on Orderdetails Table.
+ 
 
 * ##### Stock Availability Trigger: 
 
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Check_StockAvailable_table_Trigger.png)
 
 ###### Testing the stock availability trigger
-
-![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Check_StockAvailable_table_Trigger_Result.png) |	![]()
 This trigger is created on Stock available to checks the available stock quantity of a product when an order detail is inserted or updated. If the ordered quantity exceeds the available stock, the trigger should prevent the insertion or update and display an appropriate error message. This  Prevents overselling by checking available stock before order confirmation. 
 
+
+![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Check_StockAvailable_table_Trigger_Result.png) |	![]()
+
+When 40, which was more than available stock, was set where ProductID is 2, in order to update the customer Order, the trigger prevent an update and an error message was generated as pointed by the arrow.
+
 * ##### Data Audit Trigger:
+This trigger is designed to log changes (inserts, updates, and deletions) made to the Products table into an audit table named Audit_table. This audit trail serves as a record of data modifications and helps maintain data integrity by tracking changes to product information.
+
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Product_Audit_Table_Trigger.png)
+
 
 Testing the Data Audit Trigger
 
-	                                                              |	Output
+Operation on Product Table                                                            |	Output
 :--------------------------------------------------------------------------------:    |:--------------------------------
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Product_Audit_Table_Trigger_Test.png) |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Product_Audit_Table_Trigger_Test_Result.png)
- trigger is designed to log changes (inserts, updates, and deletions) made to the Products table into an audit table named Audit_table. This audit trail serves as a record of data modifications and helps maintain data integrity by tracking changes to product information.
+
+When a event (Insert) occured on Procuct Table it is immediately trackedby Audit_Table.
 
 * #### Email Notification Trigger
+Keeps both sales representatives and customers informed about order updates through automated emails. This enhances transparency and improves communication.
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Email_Notification_Trigger.png)
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Email_Notification_Trigger2.png)
-: Keeps both sales representatives and customers informed about order updates through automated emails. This enhances transparency and improves communication.
-
 
 
 ## Conclusion
