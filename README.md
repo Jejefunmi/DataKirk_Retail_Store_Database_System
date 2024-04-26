@@ -77,7 +77,7 @@ Sample query                                                                    
 Retriving Top 5 best selling products can be used to make decisions about Inventory management, and Marketing Strategy.
 
 #### 3 Inaccurate Data and Communication: to solve this, Triggers were created to perform Automated responses to corresponding event carried out
-* Order Total Calculation Trigger
+* ##### Order Total Calculation Trigger
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger.png)
 
 Testing the Trigger 
@@ -86,23 +86,23 @@ Testing for Insert                                                              
 :--------------------------------------------------------------------------------:    |:--------------------------------
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_query.png) |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_inserted_Query.png)
 
-Testing for update
-Sample Data                                                                           |	Output
+
+ Testing for update                                                                   |	Output
 :--------------------------------------------------------------------------------:    |:--------------------------------
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_update_query.png) |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Total_amount_recalculate_trigger_update_query_result.png)
 
  The purpose of the trigger is to automatically update the TotalAmount  in the SalesOrders table whenever there are changes (inserts, updates, or deletes) to the OrderDetails table Ensures the total order amount in the SalesOrders table is always accurate, reflecting changes in order details.
 
-* Stock Availability Trigger: 
+* ##### Stock Availability Trigger: 
 
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Check_StockAvailable_table_Trigger.png)
 
-Testing the stock availability trigger
+###### Testing the stock availability trigger
 
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Check_StockAvailable_table_Trigger_Result.png) |	![]()
 This trigger is created on Stock available to checks the available stock quantity of a product when an order detail is inserted or updated. If the ordered quantity exceeds the available stock, the trigger should prevent the insertion or update and display an appropriate error message. This  Prevents overselling by checking available stock before order confirmation. 
 
-* Data Audit Trigger:
+* ##### Data Audit Trigger:
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Product_Audit_Table_Trigger.png)
 
 Testing the Data Audit Trigger
@@ -112,18 +112,18 @@ Testing the Data Audit Trigger
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Product_Audit_Table_Trigger_Test.png) |	![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Product_Audit_Table_Trigger_Test_Result.png)
  trigger is designed to log changes (inserts, updates, and deletions) made to the Products table into an audit table named Audit_table. This audit trail serves as a record of data modifications and helps maintain data integrity by tracking changes to product information.
 
-* Email Notification Trigger
+* #### Email Notification Trigger
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Email_Notification_Trigger.png)
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Email_Notification_Trigger2.png)
 : Keeps both sales representatives and customers informed about order updates through automated emails. This enhances transparency and improves communication.
 
 
 
-Conclusion
+## Conclusion
 This project successfully designed and implemented a database-driven Customer Relationship Management (CRM) system. The system utilizes a well-defined schema with relational tables and enforced constraints to ensure data integrity and accuracy.
-Recommendations
-This project lays a strong foundation for a comprehensive CRM system. Here are some recommendations for further development:
 
+## Recommendations
+This project lays a strong foundation for a comprehensive CRM system. Here are some recommendations for further development:
 Integration with Existing Systems: Explore integration with existing business systems like accounting or marketing software for a more unified data environment.
 Advanced Security Measures: Implement robust security measures to protect sensitive customer and sales data.
 
@@ -135,7 +135,6 @@ Advanced Security Measures: Implement robust security measures to protect sensit
 
 
 
-Problem-Solving:
 
 
 
