@@ -106,7 +106,7 @@ Likewise, testing for update, TotalAmount became 1197 when quantity 5 was set wh
 This trigger is created on Stock available to checks the available stock quantity of a product when an order detail is inserted or updated. If the ordered quantity exceeds the available stock, the trigger should prevent the insertion or update and display an appropriate error message. This  Prevents overselling by checking available stock before order confirmation. 
 
 
-![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Check_StockAvailable_table_Trigger_Result.png) |	![]()
+![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Check_StockAvailable_table_Trigger_Result.png)
 
 When 40, which was more than available stock, was set where ProductID is 2, in order to update the customer Order, the trigger prevent an update and an error message was generated as pointed by the arrow.
 
@@ -126,9 +126,9 @@ When a event (Insert) occured on Procuct Table it is immediately trackedby Audit
 
 * #### Email Notification Trigger
 Keeps both sales representatives and customers informed about order updates through automated emails. This enhances transparency and improves communication.
+
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Email_Notification_Trigger.png)
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/Email_Notification_Trigger2.png)
-
 
 ## Conclusion
 This project successfully designed and implemented a database-driven Customer Relationship Management (CRM) system. The system utilizes a well-defined schema with relational tables and enforced constraints to ensure data integrity and accuracy.
