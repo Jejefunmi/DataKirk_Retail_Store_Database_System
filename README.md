@@ -1,4 +1,4 @@
-# DataKirk_Retail_Store_Database_System
+# Database_System_DataKirk_Retail_Store_
 ## Introduction 
 ![](https://github.com/Jejefunmi/DataKirk_Retail_Store_Database_System/blob/main/github%20intro%20page.jpg)
 
